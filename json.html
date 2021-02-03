@@ -11,7 +11,16 @@
 
     <script>
 
-        const user = {id: 21, name: 'moon'};
+        const user = {
+            id: 21, 
+            name: 'moon',
+            lover: {
+                name: "Muhammad",
+                favFood: "Pizza"
+            },
+            friendAge: [22, 24, 36], 
+            friends: ['newaz', 'mun', 'khondokar']
+        };
         const userJSON = JSON.stringify(user); // It converts the output to a string
         console.log(userJSON);
         const userFromJSON = JSON.parse(userJSON); //It converts the output to a given object
